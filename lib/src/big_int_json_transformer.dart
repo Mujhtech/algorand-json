@@ -5,7 +5,7 @@ import 'package:jsontool/jsontool.dart';
 
 /// [Transformer] that allows changes to the request/response data before it
 /// is sent/received to/from the server.
-class BigIntJsonTransformer extends DefaultTransformer {
+class BigIntJsonTransformer extends SyncTransformer {
   BigIntJsonTransformer._({
     required JsonDecodeCallback jsonDecodeCallback,
   }) : super(jsonDecodeCallback: jsonDecodeCallback);
